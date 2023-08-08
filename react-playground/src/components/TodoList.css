@@ -28,6 +28,7 @@
 }
 
 .todoListMain .theList li {
+    position: relative;
     list-style: none;
     color: #333;
     background-color: rgba(255,255,255,.5);
@@ -35,6 +36,19 @@
     margin-bottom: 15px;
     border-radius: 5px;
 }
+
+.todoListMain .theList li.completed {
+    background-color: rgba(201,242,155,.5);
+}
+
+.todoListMain .theList li button {
+    position: absolute;
+    right: 10px;
+    background-color: rgba(250, 13, 4, 0.5);
+    border: 2px solid rgba(255,255,255,.5);
+    font-size: 16px;
+}
+
 
 ul .theList {
     padding: 0;
